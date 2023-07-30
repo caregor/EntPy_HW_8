@@ -9,7 +9,7 @@ import json
 import pickle
 
 
-def convert_json_to_pickle(directory):
+def convert_json2pickle(directory):
     for filename in os.listdir(directory):
         filepath = os.path.join(directory, filename)
         if filepath.lower().endswith('.json') and os.path.isfile(filepath):
