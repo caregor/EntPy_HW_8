@@ -11,12 +11,6 @@ import pickle
 
 
 def pickle2csv(pickle_filepath):
-    """
-    Преобразует содержимое pickle файла, хранящего список словарей, в табличный CSV файл.
-
-    Аргументы:
-    pickle_filepath (str): Путь к исходному pickle файлу.
-    """
     csv_filepath = os.path.splitext(pickle_filepath)[0] + '.csv'
     with open(pickle_filepath, 'rb') as pickle_file:
         try:
